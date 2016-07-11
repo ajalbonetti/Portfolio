@@ -147,6 +147,7 @@ h3,
 #main-container {
 	padding-top: 130px;
 }
+
 .main-section {
 	background: #fff;
 	padding: 30px;
@@ -263,23 +264,32 @@ footer {
 
 /* MEDIA QUERIES */
 
-/* MOBILE */
+/* DESKTOP */
 
-@media only screen and (max-width: 640px) and (min-width: 100px) {
+@media only screen and (max-width: 980px) and (min-width: 769px) {
 	
-	
+.container {
+	max-width: 730px;
+}
 
+.main-section {
+	margin: 0 40px 40px 0;
+	max-width: 420px;
+}
 
-{
+.auth-image {
+	width: 100%;
+	float: none;
+}
 
 
 /* TABLET */
 
-@ media screen and (min-width: 501px) and (max-width: 850px) {
+@ media screen and (min-width: 641px) and (max-width: 768px) {
 }
 
 
-/* DESKTOP */
+/* MOBILE */
 
-@ media screen and (min-width: 851px) {
+@ media screen and (min-width: 640px) {
 }
