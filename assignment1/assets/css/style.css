@@ -120,7 +120,7 @@ nav a:first-child {
 	max-width: 270px;
 	float: right;
 	border: 1px solid #ddd;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 }
 
 h3,
@@ -266,7 +266,7 @@ footer {
 
 /* DESKTOP */
 
-@media only screen and (max-width: 980px) and (min-width: 769px) {
+@media only screen and (min-width: 769px) and (max-width: 980px) {
 	
 .container {
 	max-width: 730px;
@@ -282,14 +282,101 @@ footer {
 	float: none;
 }
 
-
-/* TABLET */
-
-@ media screen and (min-width: 641px) and (max-width: 768px) {
 }
 
 
+/* TABLET */
+
+@media only screen and (max-width: 768px) and (min-width: 641px) {
+
+.container {
+	width: 95%;
+	max-width: 718px;
+	}
+
+.main-section {
+	width: 100%;
+	max-width: 718px;
+	float: none;
+} 
+
+.sidebar {
+	float: none;
+	width: 100%;
+	max-width: 718px;
+}
+
+.work {
+	overflow: inherit;
+	float: none;
+	display: inline-block;
+	margin: 20px 0 0px;
+}
+
+}
+
 /* MOBILE */
 
-@ media screen and (min-width: 640px) {
+@media only screen and (max-width: 640px) {
+
+.container:not(#logo) {
+	width: 95%;
+	max-width: 718px;
+}
+
+#navbar .container {
+	width: 100%;
+}
+
+.main-section {
+	width: 95%%;
+	max-width: 718px;
+} 
+
+.sidebar {
+	width: 100%;
+	max-width: 718px;
+}
+
+.work {
+	overflow: inherit;
+	float: none;
+	display: inline-block;
+	margin: 20px 0 0px;
+	width: 100%;
+}
+
+.auth-image {
+	width: 100%;
+	float: none;
+}
+
+#logo {
+	width: 100%;
+	clear: both;
+}
+
+nav {
+	padding-top: 16px;
+	text-align: center;
+	height: 65px;
+	margin: 0 auto;
+	float: none;
+	clear: both;
+}
+
+nav a {
+	margin: 0 auto;
+	padding-left: 8%;
+	padding-right: 8%;
+}
+
+#navbar {
+	position: relative;
+}
+
+#main-container {
+	padding-top: 0;
+}
+
 }
